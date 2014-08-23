@@ -20,7 +20,6 @@ public class MainActivity extends FragmentActivity {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         Fragment fb = new MainFragment().newInstance();
         ft.replace(android.R.id.content, fb);
-        ft.addToBackStack("BusinessCardFragment");
         ft.commit();
     }
 

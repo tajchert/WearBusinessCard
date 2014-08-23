@@ -3,11 +3,10 @@ package pl.tajchert.businesscardwear;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity {
-
-    private TextView mTextView;
+    private ImageView qrCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +16,13 @@ public class MainActivity extends Activity {
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
-                mTextView = (TextView) stub.findViewById(R.id.text);
+                qrCode = (ImageView) stub.findViewById(R.id.image_qr_code);
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }
