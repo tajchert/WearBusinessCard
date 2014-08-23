@@ -11,7 +11,7 @@
         android:layout_centerVertical="true"
         android:text="@string/image_null"
         android:fontFamily="sans-serif-condensed"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
 
     <ImageView
         android:layout_width="fill_parent"

@@ -21,9 +21,9 @@ public class Tools {
         hints.put(EncodeHintType.MARGIN, 2);
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
         try {
-            BitMatrix matrix = writer.encode(content, BarcodeFormat.QR_CODE, 270, 270, hints);
+            BitMatrix matrix = writer.encode(content, BarcodeFormat.QR_CODE, 320, 320, hints);
             Bitmap bm = toBitmap(matrix);
-            bm = Bitmap.createBitmap(bm, 10, 10, bm.getWidth()- 20, bm.getHeight() - 20);
+            bm = Bitmap.createBitmap(bm, 10, 10, bm.getWidth() - 20, bm.getHeight() - 20);
             return bm;
             //saveImage(bm);
         } catch (WriterException e1) {

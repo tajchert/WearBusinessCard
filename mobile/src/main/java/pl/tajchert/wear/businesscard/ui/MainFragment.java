@@ -107,7 +107,7 @@ public class MainFragment extends android.support.v4.app.Fragment {
 
     private String setCodeContent(){
         String name = textName.getEditText().getText().toString();
-        String surname = textName.getEditText().getText().toString();
+        String surname = textSurname.getEditText().getText().toString();
         String phoneS = textPhone.getEditText().getText().toString();
         String emailS = textEmail.getEditText().getText().toString();
         String websiteS = textWebsite.getEditText().getText().toString();
@@ -125,7 +125,6 @@ public class MainFragment extends android.support.v4.app.Fragment {
             content += "URL:" + websiteS + ";";
         }
         if(address.length()>0){
-
             content += "ADR:" + address + ";";
         }
         content +=";";

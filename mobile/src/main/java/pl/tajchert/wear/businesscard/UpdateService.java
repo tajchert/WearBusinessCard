@@ -122,7 +122,7 @@ public class UpdateService extends Service {
 
         private Asset createAssetFromBitmap(Bitmap bitmap) {
             final ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 70, byteStream);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 45, byteStream);
             return Asset.createFromBytes(byteStream.toByteArray());
         }
     }
