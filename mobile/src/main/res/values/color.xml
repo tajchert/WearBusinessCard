@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="business_card_background_top">#ffffffff</color>
+    <color name="business_card_background_bottom">#fff3f3f3</color>
+    <color name="business_card_background_border">#ffd1d1d1</color>
+</resources>
