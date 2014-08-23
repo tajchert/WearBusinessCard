@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.io.File;
 
 public class MainActivity extends Activity {
     private ImageView imageViewQRCode;
@@ -26,6 +29,12 @@ public class MainActivity extends Activity {
 
         refreshCircle = (ImageView) findViewById(R.id.refreshCircle);
         refreshAnim = AnimationUtils.loadAnimation(this, R.anim.refresh_animation);
+
+        File qrFile = new File(imagePath);
+        if(qrFile.exists()){
+            TextView txImageNull = (TextView) findViewById(R.id.text);
+            txImageNull.setVisibility(View.GONE);
+        }
 
 
         final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub);
