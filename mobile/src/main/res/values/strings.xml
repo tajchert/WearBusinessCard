@@ -3,13 +3,10 @@
 
     <string name="app_name">BusinessCard Wear</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- MainFragment -->
-    <string name="fragment_main_contact_name">Name:</string>
-    <string name="fragment_main_contact_email">Email:</string>
-    <string name="fragment_main_contact_address">Address:</string>
-    <string name="fragment_main_contact_phone">Phone:</string>
+    <string name="fragment_main_tip">Tip: Less data = more readable code.</string>
 
 </resources>

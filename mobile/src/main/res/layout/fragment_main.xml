@@ -8,7 +8,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottom_tip"
+        android:id="@+id/scroll_item">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,4 +57,14 @@
                 android:hint="Address" />
         </LinearLayout>
     </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottom_tip"
+        android:layout_margin="3dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/fragment_main_tip"
+        android:layout_alignParentBottom="true"
+        />
 </RelativeLayout>
