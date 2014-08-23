@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BusinessCard Wear</string>
+    <string name="app_name">Business Card</string>
     <string name="image_null">Create QR card in the app on you phone.</string>
 
 </resources>
