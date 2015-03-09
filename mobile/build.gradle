@@ -8,12 +8,12 @@ android {
         applicationId "pl.tajchert.businesscardwear"
         minSdkVersion 18
         targetSdkVersion 19
-        versionCode 3
-        versionName "0.2"
+        versionCode 4
+        versionName "0.3"
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -24,6 +24,7 @@ dependencies {
     wearApp project(':wear')
     compile 'com.google.android.gms:play-services-wearable:+'
     compile files('libs/core-2.3.0.jar')
+    compile 'com.android.support:support-v13:20.0.0'
     compile 'com.iangclifton.android:floatlabel:1.0.1'
     compile 'com.pkmmte.view:circularimageview:1.1'
 }
